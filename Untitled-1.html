@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* .container {
+            width: 300px;
+            padding: 16px;
+            background-color: red;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: none;
+            box-sizing: border-box;
+        } */
+        input[type=text], input[type=password], input[ type="email"] {
+            width: 90%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            border: 1px solid #ccc;
+            /* box size: border-box; */
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .btn:hover {
+            opacity: 1;
+        }
+        .dangky{
+    background-color: #ddd;
+    border: 1px solid #ccc;
+}
+label{
+    display: inline-block;
+}
+
+    </style>
+</head>
+<body>
+    <form class="dangky">
+        <h2>ĐĂNG KÝ</h2>
+        <p>Vui lòng nhập thông tin để tạo mới tài khoản:</p>
+        
+        <strong> <label  class="email"     for="email">Email:</label></strong><br>
+
+        <!-- <input type="email" id="email" name="email" placeholder="Vui lòng nhập email!"><br> -->
+       <input type="email" id="email" name="email" placeholder="Vui lòng nhập email!"><br>
+        <strong><label for="password">Mật khẩu:</label></strong>
+
+        <input type="password" id="password" name="password" placeholder="Vui lòng nhập mật khẩu!"><br>
+        <strong><label for="repassword">Nhập lại mật khẩu:</label>
+        </strong>
+        <input type="password" id="repassword" name="repassword" placeholder="Vui lòng nhập mật khẩu!"><br>
+        <label>Chọn cấp độ thành viên:</label><br>
+        <input type="radio" id="bac" name="memberlevel" value="bac">
+        <label for="bac">Bạc</label><br>
+        <input type="radio" id="vang" name="memberlevel" value="vang">
+        <label for="vang">Vàng</label><br>
+        <input type="radio" id="bachkim" name="memberlevel" value="bachkim">
+        <label for="bachkim">Bạch Kim</label><br>
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">Thông qua việc tạo tài khoản, <a href="">bạn đồng ý với Điều Khoản & Quyền riêng tư của chúng tôi?</a></label><br>
+        <input type="submit" value="Đăng Ký">
+        <input type="submit" value="Hủy">
+        
+    </form>
+</body>
+</html>
+
+
+
